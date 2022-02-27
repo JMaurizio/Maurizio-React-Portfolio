@@ -1,0 +1,84 @@
+:root {
+    --primary:#123a52;
+    --secondary:#8e8350;
+    --tertiary:#1d2d0b;
+    --quaternary:#ffbc37;
+}
+
+body {
+    background-image: url(./Images/portfolio-background-flipped-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#main-nav {
+    height: 575px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-color: var(--quaternary);
+}
+
+#nav-text {
+    visibility: hidden;
+    display: none;
+    color: var(--quaternary);
+}
+
+#nav-icon {
+    font-size: 30px;
+    color: var(--quaternary);
+}
+
+#nav-icon:hover #nav-text {
+    visibility: visible;
+    display: block;
+    font-size: large;
+}
+
+#nav-icon:hover {
+    font-size: 50px;
+}
+
+#intro-p {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+#JMText {
+    color: var(--tertiary);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#about-me-p {
+    color: var(--primary);
+}
+
+#JMPortrait {
+    width: 302px;
+    height: 403px;
+}
+
+.card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    width: 300px;
+}
+
+#project-title {
+    visibility: hidden;
+    color: var(--secondary);
+}
+
+#project-card:hover #project-title {
+    visibility: visible;
+}
+
+#project-card:hover #project-image {
+    opacity: 90%;
+}
