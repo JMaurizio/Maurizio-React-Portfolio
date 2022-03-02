@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from "react-dom";
 import Nav from './components/Nav'
 import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './assets/style.css'
 

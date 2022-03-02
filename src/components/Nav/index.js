@@ -1,7 +1,7 @@
 import React from "react";
 import About from "../About";
 import Home from "../Home";
-import Projects from "../Projects";
+import Projects from "../Project";
 import Resume from "../Resume";
 
 export default function Nav({page, setPage}) {
