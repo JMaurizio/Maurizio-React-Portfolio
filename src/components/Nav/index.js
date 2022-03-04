@@ -3,6 +3,7 @@ import About from "../About";
 import Home from "../Home";
 import Projects from "../Project";
 import Resume from "../Resume";
+import Contact from "../Contact";
 
 export default function Nav({page, setPage}) {
     
@@ -28,6 +29,11 @@ export default function Nav({page, setPage}) {
                     class="text-decoration-none text-white m-2 d-flex flex-column align-items-center" id="nav-icon">
                     <i class="bi bi-file-code" id="nav-icon"></i>
                     <div id="nav-text">Projects</div>
+                </button>
+                <button onClick={() => setPage(<Contact/>)} 
+                    class="text-decoration-none text-white m-2 d-flex flex-column align-items-center" id="nav-icon">
+                    <i class="bi bi-phone-vibrate" id="nav-icon"></i>
+                    <div id="nav-text">Contact</div>
                 </button>
             </nav>
         </div>    
