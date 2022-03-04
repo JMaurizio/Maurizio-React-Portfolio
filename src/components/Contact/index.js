@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser'
-import { Button } from "react-bootstrap";
+import { Button, Row, Stack } from "react-bootstrap";
 
 export default function Contact() {
     const formName = document.getElementById('form-name');
@@ -32,15 +32,24 @@ export default function Contact() {
     };
     
     return (
-        <div class="col-10 offset-1 d-flex flex-col flex-wrap justify-content-center align-items-center">
+        <div class="col-10 offset-1 d-flex flex-row flex-wrap justify-content-center align-items-center">
+            
             <form ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="name" placeholder="Name" name="user_name" id="form-name"/>
-                    <label>Email address</label>
-                    <input type="email" placeholder="name@example.com" name="user_email" id="form-email" />
-                    <label>Your message here</label>
-                    <input type="textarea" rows={6} name="message" id="form-message" />
-                <Button variant="primary" type="submit" value="Send">Submit</Button>
+                <Stack gap={2}>
+                    <Row>
+                        <label>Name:</label>
+                        <input type="name" placeholder="Name" name="user_name" id="form-name"/>
+                    </Row>
+                    <Row>    
+                        <label>Email address:</label>
+                        <input type="email" placeholder="name@example.com" name="user_email" id="form-email" />
+                    </Row>
+                    <Row>    
+                        <label>Message:</label>
+                        <input type="textarea" rows={6} name="message" placeholder="Your text here" id="form-message" />
+                    </Row>
+                    <Button variant="primary" type="submit" value="Send">Submit</Button>
+                </Stack>
             </form>
         </div>    
     )
