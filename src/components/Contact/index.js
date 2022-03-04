@@ -1,13 +1,21 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser'
-import { Form, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function Contact() {
+    const formName = document.getElementById('form-name');
+    const formEmail = document.getElementById('form-email')
+    const formMessage = document.getElementById('form-message')
 
     const form = useRef()
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if(!formName.value || !formEmail.value || !formMessage.value) {
+            console.log("Please fill out the form")
+            return
+        }
 
         emailjs.sendForm(
             "service_gmvq74u",
@@ -24,22 +32,16 @@ export default function Contact() {
     };
     
     return (
-        <div class="col-10 offset-1 d-flex flex-row flex-wrap justify-content-center align-items-center">
-            <Form ref={form} onSubmit={sendEmail}>
-                <Form.Group className="mb-3" controlId="name">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="name" placeholder="Name" name="user_name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" name="user_email" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="textarea">
-                    <Form.Label>Your message here</Form.Label>
-                    <Form.Control as="textarea" rows={6} name="message" />
-                </Form.Group>
+        <div class="col-10 offset-1 d-flex flex-col flex-wrap justify-content-center align-items-center">
+            <form ref={form} onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="name" placeholder="Name" name="user_name" id="form-name"/>
+                    <label>Email address</label>
+                    <input type="email" placeholder="name@example.com" name="user_email" id="form-email" />
+                    <label>Your message here</label>
+                    <input type="textarea" rows={6} name="message" id="form-message" />
                 <Button variant="primary" type="submit" value="Send">Submit</Button>
-            </Form>
+            </form>
         </div>    
     )
 }
