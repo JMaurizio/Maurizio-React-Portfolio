@@ -14,14 +14,10 @@ export default function Projects() {
                     </Card.ImgOverlay>
                 </Route>
             </Card> */}
-            <Card onClick={() => {window.open('https://joelkovalcson.github.io/Programmer-Dashboard/','_blank');}} className="bg-dark text-white">
-                <Card.Img src={programmerDashboard} alt="Programer Dashboard Screenshot" />
-                <Card.ImgOverlay>
-                    <Card.Title>Programmer Dashboard</Card.Title>
-                    <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                    </Card.Text>
+            <Card onClick={() => {window.open('https://joelkovalcson.github.io/Programmer-Dashboard/','_blank');}} className="bg-dark text-white" id="project-card">
+                <Card.Img src={programmerDashboard} id="project-image" alt="Programer Dashboard Screenshot" />
+                <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
+                    <Card.Title id="project-title">Programmer Dashboard</Card.Title>
                 </Card.ImgOverlay>
             </Card>
         </div>    

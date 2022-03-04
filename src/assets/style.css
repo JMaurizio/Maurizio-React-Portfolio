@@ -32,6 +32,11 @@ body {
     color: var(--quaternary);
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 #nav-icon:hover #nav-text {
     visibility: visible;
     display: block;
@@ -80,5 +85,5 @@ body {
 }
 
 #project-card:hover #project-image {
-    opacity: 90%;
+    opacity: 50%;
 }
