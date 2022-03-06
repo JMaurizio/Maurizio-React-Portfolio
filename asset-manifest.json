@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Maurizio-React-Portfolio/static/css/main.bbcae6f2.css",
+    "main.js": "/Maurizio-React-Portfolio/static/js/main.28ebce76.js",
+    "static/js/787.66a259a6.chunk.js": "/Maurizio-React-Portfolio/static/js/787.66a259a6.chunk.js",
+    "static/media/Joshua Maurizio Portrait.jpg": "/Maurizio-React-Portfolio/static/media/Joshua Maurizio Portrait.75eb799cc3a5da795fb0.jpg",
+    "static/media/portfolio-background-flipped-cropped.jpg": "/Maurizio-React-Portfolio/static/media/portfolio-background-flipped-cropped.12f22d002a5adf869927.jpg",
+    "static/media/programmer-dashboard.png": "/Maurizio-React-Portfolio/static/media/programmer-dashboard.9953c9cbb3495bc6183b.png",
+    "static/media/smoky moutain placeholder.jpg": "/Maurizio-React-Portfolio/static/media/smoky moutain placeholder.3f6bddfbbde547f3b210.jpg",
+    "static/media/chattleship-board-crop.png": "/Maurizio-React-Portfolio/static/media/chattleship-board-crop.2fc30a0a8f06e36d988e.png",
+    "static/media/Joshua Maurizio Resume.pdf": "/Maurizio-React-Portfolio/static/media/Joshua Maurizio Resume.5b286dd5049bf5473cdc.pdf",
+    "index.html": "/Maurizio-React-Portfolio/index.html",
+    "main.bbcae6f2.css.map": "/Maurizio-React-Portfolio/static/css/main.bbcae6f2.css.map",
+    "main.28ebce76.js.map": "/Maurizio-React-Portfolio/static/js/main.28ebce76.js.map",
+    "787.66a259a6.chunk.js.map": "/Maurizio-React-Portfolio/static/js/787.66a259a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbcae6f2.css",
+    "static/js/main.28ebce76.js"
+  ]
+}
