@@ -38,6 +38,12 @@ export default function Projects() {
                     <Card.Title id="project-title">Coming Soon</Card.Title>
                 </Card.ImgOverlay>
             </Card>
+            <Card onClick={() => {window.open('https://chattleship.herokuapp.com/','_blank');}} className="bg-dark text-white m-2" id="project-card">
+                <Card.Img src={comingSoonImage} id="project-image" alt="Moutain placeholder image" />
+                <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
+                    <Card.Title id="project-title">Coming Soon</Card.Title>
+                </Card.ImgOverlay>
+            </Card>
         </div>    
     )
 }
