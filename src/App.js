@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <>
-      <section class="container-fluid d-flex flex-row align-items-center">
+      <section class="container-fluid d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column align-items-center">
         <Nav
         page={page}
         setPage={setPage}

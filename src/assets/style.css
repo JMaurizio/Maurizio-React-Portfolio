@@ -131,3 +131,35 @@ form {
 #form-message {
     height: 100px;
 }
+
+@media screen and (max-width: 990px) {
+    
+    #main-nav {
+        height: 575px;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: var(--tertiary);
+    }
+
+    #nav-text {
+        visibility: visible;
+        display: block;
+        color: var(--tertiary);
+    }
+    
+    #nav-icon {
+        font-size: 30px;
+        color: var(--tertiary);
+    }
+
+    #nav-icon:hover {
+        font-size: 30px;
+    }
+
+    #nav-icon:hover #nav-text {
+        visibility: visible;
+        display: block;
+    }
+}

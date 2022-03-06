@@ -1,5 +1,5 @@
 import React from "react";
-import JMResume from "../../assets/Images/Joshua Maurizio Resume1024_1.jpg"
+import JMResume from "../../assets/Images/Joshua Maurizio Resume.pdf"
 
 export default function Resume() {
     return (

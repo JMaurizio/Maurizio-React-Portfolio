@@ -9,7 +9,7 @@ export default function Nav({page, setPage}) {
     
     return (
         <div class='col-1'>
-            <nav class="h4 d-flex flex-column mt-2 justify-content-evenly align-items-center sticky-top" id="main-nav">
+            <nav class="h4 d-flex flex-xl-column flex-lg-column flex-md-row flex-sm-row flex-row mt-2 justify-content-evenly align-items-center sticky-top" id="main-nav">
                 <button onClick={() => setPage(<Home/>)}  
                     class="text-decoration-none text-white m-2 d-flex flex-column align-items-center" id="nav-icon">
                     <i class="bi bi-house-door" id="nav-icon"></i>
