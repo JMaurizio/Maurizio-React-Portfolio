@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser'
-import { Button, Row, Stack } from "react-bootstrap";
+import { Stack } from "react-bootstrap";
 
 export default function Contact() {
     const formName = document.getElementById('form-name');
@@ -36,19 +36,20 @@ export default function Contact() {
             
             <form ref={form} onSubmit={sendEmail}>
                 <Stack gap={2}>
-                    <Row>
-                        <label>Name:</label>
-                        <input type="name" placeholder="Name" name="user_name" id="form-name"/>
-                    </Row>
-                    <Row>    
-                        <label>Email address:</label>
-                        <input type="email" placeholder="name@example.com" name="user_email" id="form-email" />
-                    </Row>
-                    <Row>    
-                        <label>Message:</label>
-                        <input type="textarea" rows={6} name="message" placeholder="Your text here" id="form-message" />
-                    </Row>
-                    <Button variant="primary" type="submit" value="Send">Submit</Button>
+                    <h3 class="form-header">Email me directly</h3>
+                    <div class="form-group">
+                        <label class="form-label">Name:</label>
+                        <input class="form-input" type="name" placeholder="Name" name="user_name" id="form-name"/>    
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email address:</label>
+                        <input class="form-input" type="email" placeholder="name@example.com" name="user_email" id="form-email" />   
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message:</label>
+                        <input class="form-input" name="message" placeholder="Your message here" id="form-message" />
+                    </div>
+                    <button class="form-button" type="submit" value="Send">Submit</button>
                 </Stack>
             </form>
         </div>    
